@@ -1,15 +1,17 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println("First Name Validation: " + NameValidation.validatefirstName("Joh")); // True
+        System.out.println("Last Name Validation: " + NameValidation.validateSecondName("Doe")); // True
+        System.out.println("Email Validation: " + EmailValidation.validate("abc.xyz@bl.co.in")); // True
+        System.out.println("Mobile Validation: " + MobileValidation.validate("91 9919819801")); // True
+        System.out.println("Password Rule 1 Validation: " + PasswordRule1.validate("Password1@")); // True
+        System.out.println("Password Rule 2 Validation: " + PasswordRule2.validate("passWord1@")); // True
+        System.out.println("Password Rule 3 Validation: " + PasswordRule3.validate("Password1@")); // True
+        System.out.println("Password Rule 4 Validation: " + PasswordRule4.validate("Password1@")); // True
+        System.out.println("Email Samples Validation: " + EmailSamplesValidation.validate("abc.xyz@bl.co.in")); // True
     }
 }
